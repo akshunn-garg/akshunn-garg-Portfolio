@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta name="description" content="Akshunn Garg — Computer Science student building AI/ML systems, LLM applications, and privacy-focused security tools." />
+  <title>Akshunn Garg | AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0d12;--panel:#11151d;--panel2:#151b25;--text:#f1f4f9;--muted:#a0a9b8;--line:#27303d;--accent:#b6f36b;--accent2:#8fe1d4;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(91,130,81,.13),transparent 34%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(39,48,61,.7)}
+    .navinner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:-.06em;font-size:1.12rem}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:25px;color:var(--muted);font-size:.88rem}.navlinks a:hover,.textlink:hover{color:var(--accent)}
+    .pill{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);padding:9px 14px;border-radius:999px;font-size:.82rem;color:#dce4ef}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px #b6f36b80}
+    .hero{padding:105px 0 90px;display:grid;grid-template-columns:1.3fr .7fr;gap:65px;align-items:center}
+    .eyebrow{font:500 .76rem 'DM Mono',monospace;color:var(--accent);letter-spacing:.13em;text-transform:uppercase}
+    h1{font-size:clamp(3rem,7vw,5.7rem);letter-spacing:-.085em;line-height:.99;margin:22px 0 25px;font-weight:800}
+    h1 .stroke{color:transparent;-webkit-text-stroke:1px #aeb8c7}
+    .intro{max-width:640px;color:var(--muted);font-size:1.08rem;line-height:1.9}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:10px;padding:13px 18px;font-weight:800;font-size:.9rem;border:1px solid var(--line);transition:transform .2s,border-color .2s}
+    .btn:hover{transform:translateY(-2px);border-color:#61704f}.primary{background:var(--accent);color:#10150a;border-color:var(--accent)}
+    .hero-card{background:linear-gradient(145deg,#171e28,#0f1219);border:1px solid var(--line);border-radius:22px;padding:25px;position:relative;overflow:hidden}
+    .hero-card:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:#b6f36b0b;right:-80px;top:-90px}
+    .card-top{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font: .75rem 'DM Mono',monospace;border-bottom:1px solid var(--line);padding-bottom:16px}
+    .terminal{font: .82rem/2 'DM Mono',monospace;margin:22px 0 12px;color:#c2ccda}
+    .terminal .green{color:var(--accent)}.terminal .blue{color:var(--accent2)}
+    .statrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+    .stat{padding:15px;background:#ffffff05;border:1px solid var(--line);border-radius:12px}
+    .stat strong{display:block;font-size:1.35rem;letter-spacing:-.05em}.stat span{color:var(--muted);font-size:.75rem}
+    section{padding:76px 0;border-top:1px solid rgba(39,48,61,.72)}
+    .sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px}
+    h2{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.065em;line-height:1.1;margin:10px 0 0}
+    .sectionnote{color:var(--muted);max-width:390px;font-size:.9rem}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+    .project{background:linear-gradient(150deg,var(--panel),#0e1117);border:1px solid var(--line);border-radius:17px;padding:25px;display:flex;flex-direction:column;min-height:300px;transition:transform .22s,border-color .22s}
+    .project:hover{transform:translateY(-4px);border-color:#566748}
+    .projecthead{display:flex;justify-content:space-between;gap:12px;align-items:start}
+    .projectnum{font: .75rem 'DM Mono',monospace;color:var(--accent)}
+    .project h3{font-size:1.35rem;letter-spacing:-.04em;margin:16px 0 8px}
+    .project p{color:var(--muted);font-size:.91rem;margin:0 0 20px}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+    .tag{font: .7rem 'DM Mono',monospace;border:1px solid #303b49;color:#c6d0dd;padding:5px 8px;border-radius:6px}
+    .metric{margin-top:20px;padding-top:15px;border-top:1px solid var(--line);color:var(--accent);font-size:.86rem;font-weight:800}
+    .experience{display:grid;grid-template-columns:220px 1fr;gap:30px;padding:26px 0;border-bottom:1px solid var(--line)}
+    .date{font: .75rem 'DM Mono',monospace;color:var(--accent);padding-top:5px}
+    .experience h3{margin:0;font-size:1.15rem}.company{color:var(--muted);font-size:.88rem;margin:3px 0 14px}
+    ul.clean{padding-left:18px;color:var(--muted);margin:0}ul.clean li{padding:4px 0}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .skillbox{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:12px}
+    .skillbox h3{font-size:.9rem;margin:0 0 10px}.skillbox p{font-size:.82rem;color:var(--muted);margin:0}
+    .education{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .edu{padding:21px;background:var(--panel);border:1px solid var(--line);border-radius:13px}
+    .edu h3{margin:0 0 5px;font-size:1rem}.edu p{margin:0;color:var(--muted);font-size:.84rem}
+    .edu .meta{font: .72rem 'DM Mono',monospace;color:var(--accent);margin-top:13px}
+    .contact{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;background:linear-gradient(120deg,#172019,#11151d 65%);border:1px solid #354532;border-radius:20px;padding:35px}
+    .contact h2{margin-bottom:13px}.contact p{color:var(--muted);max-width:570px;margin:0}
+    footer{padding:28px 0;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;gap:16px}
+    .textlink{color:var(--text);border-bottom:1px solid #59634e}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:35px;padding-top:75px}.hero-card{max-width:540px}.skills{grid-template-columns:repeat(2,1fr)}.experience{grid-template-columns:1fr;gap:7px}.sectionhead{display:block}.sectionnote{margin-top:15px}.contact{grid-template-columns:1fr}.navlinks{gap:13px}.navlinks a:nth-child(3){display:none}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.navinner{height:65px}.navlinks{font-size:.78rem;gap:12px}.navlinks a:nth-child(4){display:none}.hero{padding:65px 0}.grid,.education{grid-template-columns:1fr}.project{min-height:unset}.skills{gap:8px}.skillbox{padding:14px}.contact{padding:24px}section{padding:58px 0}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap navinner">
+      <a class="brand" href="#home">akshunn<span>.</span></a>
+      <div class="navlinks">
+        <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a>
+      </div>
+      <a class="pill" href="#contact"><span class="dot"></span> Contact</a>
+    </div>
+  </nav>
+
+  <main id="home" class="wrap">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Computer Science · AI / ML</div>
+        <h1>Building useful<br><span class="stroke">intelligence.</span></h1>
+        <p class="intro">I’m Akshunn Garg, a Computer Science student at Delhi Technological University. I build AI/ML applications, fine-tune language models, and explore privacy-focused security systems.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="btn" href="mailto:akshunn.garg2005@gmail.com">Get in touch ↗</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="card-top"><span>AKSHUNN_GARG.py</span><span>● ● ●</span></div>
+        <div class="terminal">
+          <div><span class="blue">class</span> Engineer:</div>
+          <div>&nbsp;&nbsp;focus = <span class="green">["AI/ML", "LLMs"]</span></div>
+          <div>&nbsp;&nbsp;builds = <span class="green">["SLiCE", "Persona AI"]</span></div>
+          <div>&nbsp;&nbsp;mindset = <span class="green">"learn by building"</span></div>
+          <div>&nbsp;&nbsp;<span class="blue">def</span> next(self):</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">return</span> "something useful"</div>
+        </div>
+        <div class="statrow">
+          <div class="stat"><strong>600+</strong><span>DSA problems solved</span></div>
+          <div class="stat"><strong>2027</strong><span>Graduation · DTU</span></div>
+        </div>
+      </aside>
+    </div>
+
+    <section id="projects">
+      <div class="sectionhead">
+        <div><div class="eyebrow">Selected work / 01</div><h2>Projects that solve<br>real problems.</h2></div>
+        <p class="sectionnote">A selection of experiments across language models, multimodal AI, and privacy-aware email security.</p>
+      </div>
+      <div class="grid">
+        <article class="project">
+          <div class="projecthead"><span class="projectnum">PROJECT_01</span><span>↗</span></div>
+          <h3>SLiCE: Phishing Email Detection</h3>
+          <p>A lightweight, privacy-preserving phishing detector that analyzes email links without reading message-body text. Combines sender trust, brand alignment, destination mismatch, link obfuscation, and redirect consistency signals.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">Scikit-learn</span><span class="tag">Cybersecurity</span></div>
+          <div class="metric">90.9% recall on Nazario 2024–25 · 95.2% on Phishing Pot</div>
+        </article>
+        <article class="project">
+          <div class="projecthead"><span class="projectnum">PROJECT_02</span><span>↗</span></div>
+          <h3>Chandra Shekhar Azad Persona LLM</h3>
+          <p>A Hindi AI persona built from a curated instruction dataset based on Chandra Shekhar Azad’s biography, quotes, and manifesto. Fine-tuned Qwen with LoRA and connected voice synthesis and lip-sync components for a multimodal prototype.</p>
+          <div class="tags"><span class="tag">Qwen</span><span class="tag">LoRA</span><span class="tag">Hugging Face</span><span class="tag">TTS</span></div>
+          <div class="metric">396 instruction samples · 69.7M trainable parameters</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="sectionhead">
+        <div><div class="eyebrow">Experience / 02</div><h2>Learning by building.</h2></div>
+      </div>
+      <div class="experience">
+        <div class="date">MAY 2026 — JUL 2026</div>
+        <div>
+          <h3>AI Intern</h3><div class="company">Atthah Info and Media Pvt. Ltd.</div>
+          <ul class="clean">
+            <li>Developed and optimized AI inference pipelines using Python and LoRA-based fine-tuning on Qwen3-4B.</li>
+            <li>Trained 69.7M parameters over 396 instruction samples, improving deployment readiness.</li>
+            <li>Researched FASHN AI, an open-source virtual try-on model, and evaluated its architecture, capabilities, and integration workflow.</li>
+            <li>Used Hugging Face, GitHub, ChatGPT, Gemini, and Groq for AI research and experimentation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="sectionhead">
+        <div><div class="eyebrow">Toolkit / 03</div><h2>Tools of the trade.</h2></div>
+      </div>
+      <div class="skills">
+        <div class="skillbox"><h3>Languages</h3><p>C++ · Python · SQL</p></div>
+        <div class="skillbox"><h3>AI / ML</h3><p>Machine Learning · LightGBM · Scikit-learn</p></div>
+        <div class="skillbox"><h3>LLM Engineering</h3><p>Qwen · LoRA · Hugging Face</p></div>
+        <div class="skillbox"><h3>CS Fundamentals</h3><p>DSA · OOP · Operating Systems</p></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="sectionhead">
+        <div><div class="eyebrow">Background / 04</div><h2>Education & highlights.</h2></div>
+      </div>
+      <div class="education">
+        <div class="edu"><h3>Delhi Technological University</h3><p>B.Tech, Computer Science Engineering</p><div class="meta">AUG 2023 — MAY 2027 · CGPA 7.39/10</div></div>
+        <div class="edu"><h3>Stanford Machine Learning Specialization</h3><p>Coursera · Supervised ML, neural networks, clustering, reinforcement learning</p><div class="meta">CERTIFICATION</div></div>
+        <div class="edu"><h3>NPTEL — Joy of Computing Using Python</h3><p>Score: 98/100 · Top 1%</p><div class="meta">ACHIEVEMENT</div></div>
+        <div class="edu"><h3>Competitive Programming & Entrance Exams</h3><p>600+ DSA problems solved · JEE Main AIR 12,522 · JEE Advanced AIR 11,355</p><div class="meta">PROBLEM SOLVING</div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div><div class="eyebrow">Have a project in mind?</div><h2>Let’s build something<br>worth shipping.</h2><p>I’m interested in AI/ML engineering, language-model applications, and practical machine learning systems. Reach out to connect or discuss an opportunity.</p></div>
+        <div class="actions"><a class="btn primary" href="mailto:akshunn.garg2005@gmail.com">Email me ↗</a><a class="btn" href="tel:+919910785182">Call ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> Akshunn Garg</span><span>Designed with intent. Built for the web.</span></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
